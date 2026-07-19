@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>For Esha ❤️</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Cormorant+Garamond:wght@400;600;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div id="petals"></div>
+
+<!-- ========================= -->
+<!-- LOCK SCREEN -->
+<!-- ========================= -->
+
+<section id="lockScreen">
+
+<div class="lockBox">
+
+<h1>I made something for you 🌸</h1>
+
+<p>Enter the secret code</p>
+
+<div id="display">____</div>
+
+<div class="dialpad">
+
+<button onclick="press(1)">1</button>
+<button onclick="press(2)">2</button>
+<button onclick="press(3)">3</button>
+
+<button onclick="press(4)">4</button>
+<button onclick="press(5)">5</button>
+<button onclick="press(6)">6</button>
+
+<button onclick="press(7)">7</button>
+<button onclick="press(8)">8</button>
+<button onclick="press(9)">9</button>
+
+<button onclick="clearCode()">⌫</button>
+<button onclick="press(0)">0</button>
+<button onclick="unlock()">❤️</button>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- STORY -->
+<!-- ========================= -->
+
+<main id="story">
+
+<!-- HERO -->
+
+<section class="hero reveal">
+
+<img src="assets/flowers/lily.png" class="flower">
+
+<h1>
+
+Happy Birthday,<br>
+Esha ❤️
+
+</h1>
+
+<p>
+
+Because some flowers are beautiful...
+
+and some people are too.
+
+</p>
+
+</section>
+
+<!-- ROSES -->
+
+<section class="rose reveal">
+
+<img src="assets/flowers/roses.png" class="flower">
+
+<h2>
+
+Roses are red,<br>
+
+violets are blue.<br><br>
+
+I just wanted to say...<br><br>
+
+Happy Birthday to You!!
+
+</h2>
+
+<p>
+
+</p>
+
+</section>
+
+<!-- ========================= -->
+<!-- MEMORIES -->
+<!-- ========================= -->
+
+<section class="memory reveal">
+
+<h1> Moments 📸 </h1>
+
+<div class="memory-card">
+
+<img src="assets/photos/esha1.jpg">
+
+<p>The eyeliner was on point, as always.</p>
+
+</div>
+
+<div class="memory-card">
+
+<img src="assets/photos/esha2.jpg">
+
+<p>Still one of my favourite pictures.</p>
+
+</div>
+
+<div class="memory-card">
+
+<img src="assets/photos/esha3.jpg">
+
+<p>Couldn't leave this one out.</p>
+
+</div>
+
+<div class="memory-card">
+
+<img src="assets/photos/esha4.jpg">
+
+<p>Baby esha is so cute🫶🏽.</p>
+
+</div>
+
+<div class="memory-card">
+<img src="assets/photos/esha5.jpg">
+
+<p>
+🌻
+</p>
+
+</div>
+
+<div class="memory-card">
+
+<img src="assets/photos/esha6.jpg">
+
+<p>
+🙈
+</p>
+
+</div>
+
+<div class="memory-card">
+
+<img src="assets/photos/esha7.jpg">
+
+<p>
+The best photograper in the world .📸 (me)
+</p>
+
+</div>
+
+
+</section>
+
+<!-- ========================= -->
+<!-- LETTER -->
+<!-- ========================= -->
+
+<section class="letter reveal">
+
+<h1>For You 💌</h1>
+
+<div class="envelope" onclick="openLetter()">
+
+<div class="flap"></div>
+
+<div class="body">
+
+💌
+
+</div>
+
+</div>
+
+<div id="letterPaper" class="paper hiddenLetter">
+
+<p id="letterText"></p>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- GOOFY SECTION -->
+<!-- ========================= -->
+
+<section class="goofy reveal">
+
+<h1> One last thing😂</h1>
+
+<div class="gallery">
+
+<img src="assets/goofy/goofy1.jpg">
+
+<img src="assets/goofy/goofy2.jpg">
+
+<img src="assets/goofy/goofy3.jpg">
+
+<img src="assets/goofy/goofy4.jpg">
+
+<img src="assets/goofy/goofy5.jpg">
+
+<img src="assets/goofy/goofy6.jpg">
+
+</div>
+
+<p> I couldn't end this without these 😭❤️</p>
+
+</section>
+
+<!-- ========================= -->
+<!-- END -->
+<!-- ========================= -->
+
+<section class="end reveal">
+
+<img src="assets/flowers/lily.png" class="flower">
+
+<h1>Happy Birthday, Esha ❤️</h1>
+
+<p class="endQuote">
+
+Thank you for scrolling all the way here.
+
+</p>
+
+<p class="endText">
+
+I just wanted to make something that could make you smile today.
+
+I hope this little surprise did.
+
+</p>
+
+<h2>
+
+— B👾
+
+<p class="footerNote">
+
+Made especially for you
+
+i hope you liked it or else i will cry 😭
+
+</p>
+
+</h2>
+
+</section>
+
+</main>
+
+<audio id="bgMusic" loop>
+    <source src="assets/music/song.mp3" type="audio/mpeg">
+</audio>
+
+<script src="script.js"></script>
+
+</body>
+</html>

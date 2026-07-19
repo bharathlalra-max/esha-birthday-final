@@ -1,0 +1,855 @@
+/* ==========================================
+   RESET
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:
+    radial-gradient(circle at top,#fff8f2,#f7efe6 60%,#efe1d3);
+
+    color:#3f352d;
+
+    overflow:hidden;
+
+    background-attachment:fixed;
+
+}
+
+/* ==========================================
+   LOCK SCREEN
+========================================== */
+
+#lockScreen{
+    width:100%;
+    height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:linear-gradient(135deg,#f8f3eb,#efe2d3);
+}
+
+.lockBox{
+
+    width:360px;
+
+    background:white;
+
+    border-radius:25px;
+
+    padding:35px;
+
+    text-align:center;
+
+    box-shadow:0 25px 60px rgba(0,0,0,.15);
+
+}
+
+.lockBox h1{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:42px;
+
+    margin-bottom:15px;
+
+}
+
+.lockBox p{
+
+    color:#777;
+
+    margin-bottom:25px;
+
+}
+
+#display{
+
+    font-size:34px;
+
+    letter-spacing:10px;
+
+    margin-bottom:30px;
+
+}
+
+.dialpad{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:15px;
+
+}
+
+.dialpad button{
+
+    height:72px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#f4ece4;
+
+    font-size:24px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.dialpad button:hover{
+
+    background:#ead9c6;
+
+    transform:scale(1.08);
+
+}
+
+/* ==========================================
+   STORY
+========================================== */
+
+#story{
+
+    display:none;
+
+}
+
+section{
+
+    min-height:100vh;
+
+    display:flex;
+    flex-direction:column;
+
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    padding:80px 25px;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.hero{
+
+background:transparent;
+
+}
+
+.rose{
+
+background:rgba(255,245,244,.5);
+
+}
+
+.memory{
+
+background:rgba(255,255,255,.25);
+
+}
+
+.letter{
+
+background:rgba(255,255,255,.35);
+
+}
+
+.goofy{
+
+background:rgba(255,248,241,.5);
+
+}
+
+.end{
+
+background:
+
+linear-gradient(
+
+180deg,
+
+rgba(255,245,240,.8),
+
+rgba(245,225,220,.95)
+
+);
+
+}
+
+/* ==========================================
+   FLOWERS
+========================================== */
+
+.flower{
+
+    width:90%;
+
+    max-width:520px;
+
+    margin-bottom:40px;
+
+    filter:
+    drop-shadow(0 15px 30px rgba(255,255,255,.8))
+    drop-shadow(0 0 40px rgba(255,192,203,.4));
+
+    animation:
+    floatFlower 5s ease-in-out infinite,
+    glowFlower 3s ease-in-out infinite;
+
+}
+
+.hero h1,
+.end h1{
+
+font-family:'Dancing Script',cursive;
+
+font-size:80px;
+
+color:#8c5362;
+
+text-shadow:0 5px 20px rgba(0,0,0,.12);
+
+}
+
+.hero p,
+.rose p,
+.end p{
+
+font-size:22px;
+
+line-height:1.8;
+
+max-width:700px;
+
+color:#66564d;
+
+font-weight:300;
+
+}
+
+.rose h2{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:60px;
+
+    line-height:1.2;
+
+}
+/* ==========================================
+   MEMORIES
+========================================== */
+
+.memory h1{
+
+    font-family:'Cormorant Garamond',serif;
+    font-size:54px;
+    margin-bottom:60px;
+
+}
+
+.memory-card{
+
+    width:90%;
+    max-width:420px;
+    margin:80px auto;
+
+    transition:.45s ease;
+
+}
+
+.memory-card:hover{
+
+    transform:
+    rotate(-1deg)
+    translateY(-12px)
+    scale(1.02);
+
+}
+
+.memory-card img,
+.memory-card video{
+
+width:100%;
+
+padding:12px;
+
+background:white;
+
+border-radius:8px;
+
+box-shadow:0 20px 40px rgba(0,0,0,.18);
+
+}
+
+.memory-card img{
+
+    transform:rotate(-2deg);
+    transition:.4s;
+
+}
+
+.memory-card:nth-child(even) img{
+
+    transform:rotate(2deg);
+
+}
+
+.memory-card img:hover{
+
+    transform:scale(1.03);
+
+}
+
+.memory-card p{
+
+    margin-top:18px;
+    font-size:18px;
+    line-height:1.8;
+    color:#666;
+    font-style:italic;
+
+}
+
+/* ==========================================
+   LETTER
+========================================== */
+
+.letter h1{
+
+    font-family:'Dancing Script',cursive;
+    font-size:62px;
+    margin-bottom:35px;
+
+}
+
+.paper{
+
+    width:90%;
+    max-width:750px;
+    background:#fffdf8;
+    padding:45px;
+    border-radius:18px;
+    box-shadow:0 20px 40px rgba(0,0,0,.12);
+    text-align:left;
+    line-height:2;
+    font-size:20px;
+    font-family:'Cormorant Garamond',serif;
+    white-space:pre-wrap;
+
+}
+
+/* ==========================================
+   GOOFY
+========================================== */
+
+.goofy h1{
+
+    font-size:55px;
+    margin-bottom:40px;
+
+}
+
+.gallery{
+
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:30px;
+
+}
+
+.gallery img{
+
+    width:280px;
+    border-radius:18px;
+    box-shadow:0 15px 35px rgba(0,0,0,.18);
+
+}
+
+/* ==========================================
+   SCROLL ANIMATION
+========================================== */
+
+.reveal{
+
+opacity:0;
+
+transform:
+translateY(100px)
+scale(.96);
+
+transition:
+1.2s ease;
+
+}
+
+.reveal.active{
+
+opacity:1;
+
+transform:
+translateY(0)
+scale(1);
+
+}
+
+.reveal.active{
+
+    opacity:1;
+    transform:translateY(0);
+
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media(max-width:768px){
+
+.hero h1,
+.end h1{
+
+    font-size:52px;
+
+}
+
+.rose h2{
+
+    font-size:42px;
+
+}
+
+.lockBox{
+
+    width:92%;
+
+}
+
+.flower{
+
+    max-width:320px;
+
+}
+
+.paper{
+
+    padding:30px;
+    font-size:17px;
+
+}
+
+.gallery img{
+
+    width:90%;
+
+}
+
+.memory-card{
+
+    width:95%;
+
+}
+
+}
+
+@keyframes floatFlower{
+
+0%{
+
+transform:translateY(0px);
+
+}
+
+50%{
+
+transform:translateY(-15px);
+
+}
+
+100%{
+
+transform:translateY(0px);
+
+}
+
+}
+
+/* ==========================
+   FLOATING PETALS
+========================== */
+
+#petals{
+
+position:fixed;
+
+top:0;
+left:0;
+
+width:100%;
+height:100%;
+
+pointer-events:none;
+
+overflow:hidden;
+
+z-index:999;
+
+}
+
+.petal{
+
+position:absolute;
+
+width:18px;
+height:18px;
+
+background:#ffd9e6;
+
+border-radius:60% 40% 60% 40%;
+
+opacity:.8;
+
+animation:fall linear forwards;
+
+box-shadow:0 0 10px rgba(255,192,203,.4);
+
+}
+
+@keyframes fall{
+
+0%{
+
+transform:
+translateY(-40px)
+rotate(0deg);
+
+}
+
+100%{
+
+transform:
+translateY(110vh)
+rotate(720deg);
+
+}
+
+}
+
+/* ==========================
+   ENVELOPE
+========================== */
+
+.envelope{
+
+width:180px;
+height:120px;
+
+position:relative;
+
+cursor:pointer;
+
+margin:40px auto;
+
+transition:.5s;
+
+}
+
+.body{
+
+width:180px;
+height:120px;
+
+background:#d8b49c;
+
+border-radius:0 0 10px 10px;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-size:45px;
+
+box-shadow:0 15px 30px rgba(0,0,0,.2);
+
+}
+
+.flap{
+
+position:absolute;
+
+top:0;
+
+width:0;
+height:0;
+
+border-left:90px solid transparent;
+border-right:90px solid transparent;
+border-top:70px solid #c89b82;
+
+transform-origin:top;
+
+transition:.8s;
+
+}
+
+.hiddenLetter{
+
+display:none;
+
+animation:fadeLetter 1s;
+
+}
+
+.showLetter{
+
+display:block;
+
+}
+
+.open .flap{
+
+transform:rotateX(180deg);
+
+}
+
+@keyframes fadeLetter{
+
+from{
+
+opacity:0;
+
+transform:translateY(50px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+section{
+
+    scroll-snap-align:start;
+
+}
+
+html{
+
+    scroll-snap-type:y proximity;
+
+}
+
+@keyframes glowFlower{
+
+0%{
+
+filter:
+drop-shadow(0 15px 25px rgba(255,255,255,.6))
+drop-shadow(0 0 20px rgba(255,192,203,.3));
+
+}
+
+50%{
+
+filter:
+drop-shadow(0 20px 40px rgba(255,255,255,.9))
+drop-shadow(0 0 50px rgba(255,182,193,.8));
+
+}
+
+100%{
+
+filter:
+drop-shadow(0 15px 25px rgba(255,255,255,.6))
+drop-shadow(0 0 20px rgba(255,192,203,.3));
+
+}
+
+}
+
+.rose .flower{
+
+animation:
+
+floatFlower 5s ease-in-out infinite,
+
+glowFlower 3s ease-in-out infinite,
+
+sway 6s ease-in-out infinite;
+
+}
+
+@keyframes sway{
+
+0%{
+
+transform:rotate(-2deg);
+
+}
+
+50%{
+
+transform:rotate(2deg);
+
+}
+
+100%{
+
+transform:rotate(-2deg);
+
+}
+
+}
+
+.endQuote{
+
+font-family:'Dancing Script',cursive;
+
+font-size:48px;
+
+margin-top:20px;
+
+color:#8c5362;
+
+}
+
+.endSmall{
+
+margin-top:20px;
+
+font-size:18px;
+
+opacity:.75;
+
+line-height:1.8;
+
+}
+
+.end h2{
+
+margin-top:50px;
+
+font-size:28px;
+
+font-family:'Cormorant Garamond',serif;
+
+}
+
+body::before{
+
+content:"";
+
+position:fixed;
+
+top:0;
+left:0;
+
+width:100%;
+height:100%;
+
+background:
+radial-gradient(circle at center,
+rgba(255,255,255,.15),
+transparent 70%);
+
+pointer-events:none;
+
+animation:breathe 8s ease-in-out infinite;
+
+}
+
+@keyframes breathe{
+
+0%{
+
+opacity:.3;
+
+}
+
+50%{
+
+opacity:.8;
+
+}
+
+100%{
+
+opacity:.3;
+
+}
+}
+.endText{
+
+margin-top:25px;
+
+max-width:650px;
+
+font-size:20px;
+
+line-height:1.8;
+
+color:#666;
+
+}
+
+section::after{
+
+    content:"❀";
+
+    position:absolute;
+
+    bottom:20px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    font-size:28px;
+
+    color:rgba(140,83,98,.35);
+
+}
+
+.footerNote{
+
+margin-top:40px;
+
+font-size:14px;
+
+letter-spacing:2px;
+
+opacity:.5;
+
+text-transform:uppercase;
+
+}
